@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mexico Tipico | Home Style Mexican Cooking</title>
+<meta name="description" content="Mexico Tipico — fresh, home-style Mexican cooking in Union City, California.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#211914; --cream:#f7f0e5; --paper:#fffaf2; --red:#a52d24;
+  --green:#355b3b; --gold:#d2a34b; --muted:#75685e; --line:#e5d9c9;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",sans-serif}
+a{text-decoration:none;color:inherit}.container{width:min(1160px,92%);margin:auto}
+.topbar{background:var(--ink);color:#f7ead6;font-size:13px}
+.topbar .container{display:flex;justify-content:space-between;gap:20px;padding:10px 0}
+.nav{position:absolute;top:42px;left:0;right:0;z-index:5}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+.logo{width:150px;background:#fff;border-radius:4px;padding:5px}
+.links{display:flex;gap:28px;color:#fff;font-weight:600;font-size:14px}
+.links a:hover{color:#f2c56a}
+.nav-cta{border:1px solid rgba(255,255,255,.7);padding:10px 16px;border-radius:999px;color:#fff}
+.hero{min-height:760px;position:relative;display:grid;place-items:center;overflow:hidden;background:
+linear-gradient(90deg,rgba(23,12,7,.88),rgba(23,12,7,.48),rgba(23,12,7,.2)),
+url("https://www.mexicotipicorestaurant.com/images/image_menu.jpg") center/cover no-repeat;}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(15,8,4,.72),transparent 45%)}
+.hero-content{position:relative;z-index:2;color:#fff;max-width:760px;padding:120px 0 70px}
+.kicker{letter-spacing:.2em;text-transform:uppercase;color:#f1c76b;font-size:13px;font-weight:700}
+h1{font-family:Cinzel,serif;font-size:clamp(48px,7vw,86px);line-height:.95;margin:18px 0}
+.hero p{font-size:19px;line-height:1.7;max-width:640px;color:#f5eadc}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 21px;border-radius:4px;font-weight:700}
+.btn-primary{background:var(--red);color:#fff}.btn-primary:hover{background:#8d241d}
+.btn-light{border:1px solid rgba(255,255,255,.7);color:#fff}.btn-light:hover{background:#fff;color:var(--ink)}
+.strip{background:var(--red);color:#fff}.strip .container{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:18px 0;text-align:center;font-size:14px;font-weight:700}
+section{padding:100px 0}.section-head{text-align:center;max-width:680px;margin:0 auto 45px}
+.eyebrow{color:var(--red);font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase}
+h2{font-family:Cinzel,serif;font-size:clamp(32px,4vw,50px);margin:10px 0 16px}
+.section-head p{color:var(--muted);line-height:1.8}
+.story{background:var(--paper)}.story-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:70px;align-items:center}
+.story-photo{min-height:520px;background:url("https://www.mexicotipicorestaurant.com/images/new-space_adv.png") center/cover;border-radius:3px;box-shadow:18px 18px 0 #ead9bf}
+.story-copy p{color:var(--muted);line-height:1.9}
+.signature{font-family:Cinzel,serif;font-size:20px;color:var(--red);margin-top:25px}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
+.card{background:#fff;border:1px solid var(--line);padding:28px;border-radius:4px}
+.card .icon{font-size:27px}.card h3{font-family:Cinzel,serif;margin:15px 0 8px}.card p{color:var(--muted);line-height:1.7;margin:0}
+.menu-preview{background:#241a15;color:#fff}
+.menu-preview .section-head p{color:#d5c6b6}
+.menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.menu-card{padding:28px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.045)}
+.menu-card h3{font-family:Cinzel,serif;color:#f0c46a;margin-top:0}
+.menu-card p{color:#d8ccbf;line-height:1.7}.menu-link{display:inline-block;margin-top:12px;color:#f0c46a;font-weight:700}
+.bar{background:var(--paper)}.bar-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
+.bar-photo{height:480px;background:url("https://www.mexicotipicorestaurant.com/images/bar_various_mix.jpg") center/cover;border-radius:3px}
+.hours{border-top:1px solid var(--line);margin-top:25px;padding-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.hours strong{display:block}.hours span{color:var(--muted);font-size:14px}
+.visit{background:#efe1cf}.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.info{background:#fff;padding:35px;border:1px solid var(--line)}.info h3{font-family:Cinzel,serif;margin-top:0}.info p{color:var(--muted);line-height:1.8}
+.footer{background:#17110e;color:#ddd}.footer .container{padding:55px 0 25px}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:50px}.footer h3{font-family:Cinzel,serif;color:#f0c46a}.footer p{color:#b9aaa0;line-height:1.8}.footer-bottom{border-top:1px solid #342b26;margin-top:35px;padding-top:20px;font-size:12px;color:#8f837a}
+.mobile-menu{display:none}
+
+.gallery{background:#f1e4d3}
+.gallery-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;grid-template-rows:260px 260px;gap:14px}
+.gallery-grid>div{overflow:hidden;border-radius:4px;background:#ddd}
+.gallery-grid .gallery-main{grid-row:span 2}
+.gallery-grid img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+.gallery-grid div:hover img{transform:scale(1.04)}
+.menu-categories{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-bottom:28px}
+.menu-categories a{border:1px solid rgba(255,255,255,.25);padding:10px 16px;border-radius:999px;color:#fff;font-weight:700}
+.menu-categories a:hover{border-color:#f0c46a;color:#f0c46a}
+.menu-highlight{display:flex;align-items:center;justify-content:space-between;gap:25px;padding:28px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);margin-bottom:28px}
+.menu-highlight h3{font-family:Cinzel,serif;margin:7px 0}.menu-highlight p{color:#cbbfb3;margin:0}
+.menu-pages{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.menu-pages figure{margin:0;background:#fff;padding:8px;border-radius:3px}
+.menu-pages img{display:block;width:100%;height:auto}
+.menu-pages figcaption{color:#251b16;font-family:Cinzel,serif;font-weight:700;padding:13px 8px 9px}
+
+@media(max-width:800px){
+ .links{display:none}.mobile-menu{display:block;color:#fff;border:1px solid #ffffff77;padding:8px 11px;border-radius:4px}
+ .hero{min-height:690px}.hero-content{padding-top:150px}.strip .container,.story-grid,.bar-grid,.visit-grid,.footer-grid{grid-template-columns:1fr}
+ .features,.menu-grid,.menu-pages{grid-template-columns:1fr}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:220px 220px}.gallery-grid .gallery-main{grid-row:auto}.menu-highlight{align-items:flex-start;flex-direction:column}.story-photo{min-height:360px}.bar-photo{height:360px}
+ section{padding:75px 0}.topbar .container{justify-content:center;text-align:center}.topbar .hide-mobile{display:none}
+}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="container">
+  <div>OPEN 7 DAYS A WEEK</div>
+  <div class="hide-mobile">33121 Alvarado-Niles Rd · Union City, CA · <strong>(510) 471-3080</strong></div>
+</div></div>
+
+<header class="nav">
+ <div class="container nav-inner">
+  <a href="#home"><img class="logo" src="https://www.mexicotipicorestaurant.com/images/logo.png" alt="Mexico Tipico"></a>
+  <nav class="links">
+   <a href="#story">Our Story</a><a href="#food">Food</a><a href="#menu">Menu</a><a href="#bar">Bar</a><a href="#visit">Visit</a>
+   <a class="nav-cta" href="tel:+15104713080">Call Us</a>
+  </nav>
+  <a class="mobile-menu" href="#visit">MENU</a>
+ </div>
+</header>
+
+<main id="home">
+<section class="hero">
+ <div class="container hero-content">
+  <div class="kicker">Home Style Mexican Cooking</div>
+  <h1>Real food.<br>Warm hospitality.</h1>
+  <p>Fresh, home-style Mexican cooking made with care — from handmade tortillas and daily guacamole to house salsas, tamales and fresh-mixed margaritas.</p>
+  <div class="buttons">
+   <a class="btn btn-primary" href="#visit">Visit Mexico Tipico</a>
+   <a class="btn btn-light" href="tel:+15104713080">Call (510) 471-3080</a>
+  </div>
+ </div>
+</section>
+
+<div class="strip"><div class="container">
+ <div>HAPPY HOUR · MON–FRI 2–6 PM</div>
+ <div>LUNCH SPECIAL · MON–FRI 11 AM–2 PM</div>
+ <div>MEXICAN BREAKFAST · ALL DAY</div>
+</div></div>
+
+<section id="story" class="story">
+ <div class="container story-grid">
+  <div class="story-photo" role="img" aria-label="Mexico Tipico restaurant interior"></div>
+  <div class="story-copy">
+   <div class="eyebrow">Since 2002</div>
+   <h2>A taste of home, served with pride.</h2>
+   <p>Mexico Tipico began in 2002, when a young couple turned a dream into a family restaurant rooted in humble hospitality and authentic Mexican cuisine.</p>
+   <p>Inspired by a childhood in Jalisco and lessons learned in a U.S. restaurant kitchen, the owners built Mexico Tipico around one simple idea: even when life gets busy, there should always be time to slow down and enjoy home-cooked food.</p>
+   <div class="signature">Bienvenidos a nuestra casa.</div>
+  </div>
+ </div>
+</section>
+
+<section id="food">
+ <div class="container">
+  <div class="section-head">
+   <div class="eyebrow">Made fresh</div>
+   <h2>What makes it Típico</h2>
+   <p>The original restaurant emphasizes fresh preparation and family-style Mexican cooking, with handmade and house-made touches throughout the menu.</p>
+  </div>
+  <div class="features">
+   <div class="card"><div class="icon">🌽</div><h3>Fresh Tortillas</h3><p>Our tortillas are prepared fresh without lard, bringing a warm, homemade touch to every meal.</p></div>
+   <div class="card"><div class="icon">🥑</div><h3>Daily Guacamole</h3><p>Fresh guacamole is made daily alongside house salsas and three styles of beans.</p></div>
+   <div class="card"><div class="icon">🫔</div><h3>Handmade Tamales</h3><p>Our tamales are handmade daily, just like the comforting dishes you would expect from home.</p></div>
+  </div>
+ </div>
+</section>
+
+
+<section class="gallery">
+ <div class="container">
+  <div class="section-head">
+   <div class="eyebrow">From Mexico Tipico</div>
+   <h2>A little taste before you arrive.</h2>
+   <p>Photos from the original restaurant website, brought into the new experience.</p>
+  </div>
+  <div class="gallery-grid">
+   <div class="gallery-main"><img src="https://www.mexicotipicorestaurant.com/images/image_menu.jpg" alt="Mexico Tipico dishes"></div>
+   <div><img src="https://www.mexicotipicorestaurant.com/images/bar_man.jpg" alt="Mexico Tipico bar"></div>
+   <div><img src="https://www.mexicotipicorestaurant.com/images/taco_tuesday_adv.png" alt="Mexico Tipico tacos"></div>
+   <div><img src="https://www.mexicotipicorestaurant.com/images/adv_2017_drinks.jpg" alt="Mexico Tipico drinks"></div>
+  </div>
+ </div>
+</section>
+
+
+<section id="menu" class="menu-preview">
+ <div class="container">
+  <div class="section-head">
+   <div class="eyebrow">Our menu</div>
+   <h2>Classic favorites, made the Tipico way.</h2>
+   <p>Browse the restaurant's menu categories below. The menu pages and prices shown are based on the original Mexico Tipico menu currently published online.</p>
+  </div>
+
+  <div class="menu-categories">
+   <a href="#menu-pages">Breakfast</a>
+   <a href="#menu-pages">Traditional Plates</a>
+   <a href="#menu-pages">Burritos & Tacos</a>
+   <a href="#menu-pages">Seafood</a>
+   <a href="#menu-pages">Soups</a>
+   <a href="#menu-pages">Kids</a>
+   <a href="#menu-pages">Catering</a>
+  </div>
+
+  <div class="menu-highlight">
+   <div>
+    <div class="eyebrow">Popular picks</div>
+    <h3>Tipico Plate · Carne Asada · Fajitas · Street Tacos</h3>
+    <p>Signature plates, traditional favorites and Mexican breakfast are all represented in the original menu.</p>
+   </div>
+   <a class="btn btn-primary" href="https://www.mexicotipicorestaurant.com/menu.html" target="_blank">Open original menu</a>
+  </div>
+
+  <div id="menu-pages" class="menu-pages">
+   <figure><img src="https://www.mexicotipicorestaurant.com/images/menu_large_1.png" alt="Mexico Tipico breakfast menu"><figcaption>Breakfast</figcaption></figure>
+   <figure><img src="https://www.mexicotipicorestaurant.com/images/menu_large_5.png" alt="Mexico Tipico traditional plates and fajitas"><figcaption>Traditional Plates & Fajitas</figcaption></figure>
+   <figure><img src="https://www.mexicotipicorestaurant.com/images/menu_large_4.png" alt="Mexico Tipico burritos and tacos"><figcaption>Burritos, Combinations & Street Tacos</figcaption></figure>
+   <figure><img src="https://www.mexicotipicorestaurant.com/images/menu_large_3.png" alt="Mexico Tipico dinner menu"><figcaption>A-La-Carte & Dinner</figcaption></figure>
+   <figure><img src="https://www.mexicotipicorestaurant.com/images/menu_large_6.png" alt="Mexico Tipico seafood menu"><figcaption>Seafood</figcaption></figure>
+   <figure><img src="https://www.mexicotipicorestaurant.com/images/menu_large_7.png" alt="Mexico Tipico soups and seafood soups"><figcaption>Soups & Weekend Specials</figcaption></figure>
+   <figure><img src="https://www.mexicotipicorestaurant.com/images/kids_menu.png" alt="Mexico Tipico kids menu"><figcaption>Kids & Lunch Menu</figcaption></figure>
+   <figure><img src="https://www.mexicotipicorestaurant.com/images/catering_menu_ok.png" alt="Mexico Tipico catering menu"><figcaption>Catering</figcaption></figure>
+  </div>
+ </div>
+</section>
+
+<section id="bar" class="bar">
+ <div class="container bar-grid">
+  <div class="bar-photo" role="img" aria-label="Mexico Tipico bar"></div>
+  <div>
+   <div class="eyebrow">Mexico Tipico Bar</div>
+   <h2>Raise a glass to good company.</h2>
+   <p style="color:var(--muted);line-height:1.9">The bar features a wide variety of 100% agave tequilas — including añejos, reposados and extra añejos — plus your favorite spirits. Drinks are mixed with organic purées and fresh fruit juices.</p>
+   <div class="hours">
+    <div><strong>Sun–Thu</strong><span>8:00 AM – 10:00 PM</span></div>
+    <div><strong>Fri–Sat</strong><span>8:00 AM – 11:00 PM</span></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="visit" class="visit">
+ <div class="container">
+  <div class="section-head"><div class="eyebrow">Find us</div><h2>Come by for a plate.</h2><p>Bring your family, friends or coworkers and enjoy Mexico Tipico in Union City.</p></div>
+  <div class="visit-grid">
+   <div class="info"><h3>Location</h3><p>33121 Alvarado-Niles Rd<br>Union City, CA 94587</p><a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=33121+Alvarado-Niles+Rd+Union+City+CA+94587" target="_blank">Get Directions</a></div>
+   <div class="info"><h3>Call & Hours</h3><p><strong>(510) 471-3080</strong><br>Sunday–Thursday · 8 AM–10 PM<br>Friday–Saturday · 8 AM–11 PM</p><a class="btn btn-primary" href="tel:+15104713080">Call the Restaurant</a></div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer class="footer">
+ <div class="container">
+  <div class="footer-grid">
+   <div><img class="logo" src="https://www.mexicotipicorestaurant.com/images/logo.png" alt="Mexico Tipico"><p>Authentic home-style Mexican cooking, warm service and a place to slow down and enjoy a meal.</p></div>
+   <div><h3>Visit</h3><p>33121 Alvarado-Niles Rd<br>Union City, CA 94587<br>(510) 471-3080</p></div>
+   <div><h3>Hours</h3><p>Sun–Thu · 8 AM–10 PM<br>Fri–Sat · 8 AM–11 PM<br><br>Happy Hour · Mon–Fri 2–6 PM</p></div>
+  </div>
+  <div class="footer-bottom">Redesign concept based on the publicly available Mexico Tipico website and business information. © Mexico Tipico.</div>
+ </div>
+</footer>
+</body>
+</html>
